@@ -1,0 +1,3 @@
+OLA SUPPORT - SERVICE OUTAGE COMMUNICATION PROTOCOL
+
+A service outage occurs when an application feature or important service becomes temporarily unavailable. The technical team should investigate the incident and identify its possible impact on customers. Customers should receive timely updates through approved communication channels when a significant outage is confirmed. Updates should include the known issue, affected services, and the latest available recovery information. After the service is restored, the support team should communicate the resolution and monitor related customer complaints.

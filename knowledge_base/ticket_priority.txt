@@ -1,0 +1,3 @@
+OLA SUPPORT - TICKET PRIORITY POLICY
+
+Support tickets are classified into four priority levels: Critical, High, Medium, and Low. Critical tickets involve major service disruptions or serious payment problems affecting multiple customers. High-priority tickets include individual payment failures and account access problems. Medium-priority tickets involve technical difficulties, while Low-priority tickets include general inquiries and feedback. The support team should prioritize tickets according to their impact and urgency.

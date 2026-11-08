@@ -1,0 +1,208 @@
+{
+    "evaluation_type": "Deterministic MOCK_LLM RAG Triad Evaluation",
+    "total_queries": 15,
+    "in_scope_queries": 12,
+    "out_of_scope_queries": 3,
+    "average_scores": {
+        "context_relevance": 0.3667,
+        "groundedness": 1.0,
+        "answer_relevance": 0.9333
+    },
+    "query_results": [
+        {
+            "question": "How are support tickets assigned different priority levels?",
+            "expected_document": "ticket_priority",
+            "retrieved_documents": [
+                "ticket_priority",
+                "ticket_priority",
+                "sla_policy"
+            ],
+            "answer": "Based on the support knowledge base:\n\nOLA SUPPORT - TICKET PRIORITY POLICY\n\nSupport tickets are classified into four priority levels: Critical, High, Medium, and Low. Critical tickets involve major service disruptions or serious payment problems affecting multiple customers. High-priority tickets include individual payment failures and account access problems.\nMedium-priority tickets involve technical difficulties, while Low-priority tickets include general inquiries and feedback. The support team should prioritize tickets according to their impact and urgency.\nMedium-priority tickets have a response target of 4 hours and a resolution target of 24 hours, while Low-priority tickets have a response target of 24 hours and a resolution target of 72 hours. These timelines are service targets and may change depending on the complexity of the issue.",
+            "context_relevance": 0.5,
+            "groundedness": 1.0,
+            "answer_relevance": 0.6667
+        },
+        {
+            "question": "What is the expected resolution time for different ticket severities?",
+            "expected_document": "sla_policy",
+            "retrieved_documents": [
+                "sla_policy",
+                "sla_policy",
+                "ticket_priority"
+            ],
+            "answer": "Based on the support knowledge base:\n\nMedium-priority tickets have a response target of 4 hours and a resolution target of 24 hours, while Low-priority tickets have a response target of 24 hours and a resolution target of 72 hours. These timelines are service targets and may change depending on the complexity of the issue.\nOLA SUPPORT - SERVICE LEVEL AGREEMENT POLICY\n\nThe Service Level Agreement (SLA) defines the expected response and resolution time for customer support tickets. Critical tickets should receive an initial response within 15 minutes and a resolution target of 4 hours. High-priority tickets should receive a response within 1 hour and a resolution target of 12 hours.\nMedium-priority tickets involve technical difficulties, while Low-priority tickets include general inquiries and feedback. The support team should prioritize tickets according to their impact and urgency.",
+            "context_relevance": 0.5,
+            "groundedness": 1.0,
+            "answer_relevance": 0.6667
+        },
+        {
+            "question": "When should a support ticket be escalated?",
+            "expected_document": "escalation_matrix",
+            "retrieved_documents": [
+                "escalation_matrix",
+                "sla_policy",
+                "ticket_priority"
+            ],
+            "answer": "Based on the support knowledge base:\n\nLevel 3 support handles critical incidents, major service disruptions, repeated unresolved complaints, and cases requiring management attention. Tickets that exceed their SLA targets must be reviewed and escalated to the appropriate support team. When a customer complaint requires escalation, support employees should identify the issue severity, review previous troubleshooting attempts, and transfer the ticket to the correct support level.\nOLA SUPPORT - SERVICE LEVEL AGREEMENT POLICY\n\nThe Service Level Agreement (SLA) defines the expected response and resolution time for customer support tickets. Critical tickets should receive an initial response within 15 minutes and a resolution target of 4 hours. High-priority tickets should receive a response within 1 hour and a resolution target of 12 hours.\nOLA SUPPORT - TICKET PRIORITY POLICY\n\nSupport tickets are classified into four priority levels: Critical, High, Medium, and Low. Critical tickets involve major service disruptions or serious payment problems affecting multiple customers. High-priority tickets include individual payment failures and account access problems.",
+            "context_relevance": 0.3333,
+            "groundedness": 1.0,
+            "answer_relevance": 1.0
+        },
+        {
+            "question": "What are the rules for customer refunds?",
+            "expected_document": "refund_policy",
+            "retrieved_documents": [
+                "refund_policy",
+                "refund_policy",
+                "feedback_process"
+            ],
+            "answer": "Based on the support knowledge base:\n\nOLA SUPPORT - REFUND AND COMPENSATION POLICY\n\nCustomers may request a refund when they experience eligible payment failures, duplicate deductions, or incorrect charges. Every refund request must be verified using the available transaction and support-ticket information. Approved refunds should be processed through the original payment method whenever possible.\nRefund processing time depends on the payment provider and banking system. Compensation may be considered when a verified service failure causes significant inconvenience to a customer.\nThe feedback team should regularly review customer responses to identify common complaints and improvement opportunities. Negative feedback should be reviewed by the support management team when necessary.",
+            "context_relevance": 0.5,
+            "groundedness": 1.0,
+            "answer_relevance": 1.0
+        },
+        {
+            "question": "Which communication channels can customers use to contact support?",
+            "expected_document": "communication_policy",
+            "retrieved_documents": [
+                "communication_policy",
+                "business_hours",
+                "outage_protocol"
+            ],
+            "answer": "Based on the support knowledge base:\n\nOLA SUPPORT - CUSTOMER COMMUNICATION POLICY\n\nCustomer communication should remain professional, respectful, clear, and helpful. Support teams may communicate with customers through approved channels such as registered email, in-app support, and official customer support contact channels. Customers should receive updates when their tickets are created, updated, escalated, or resolved.\nDuring public holidays, regular support operations may have limited availability. Customers should be informed about any changes in support availability through official communication channels.\nOLA SUPPORT - SERVICE OUTAGE COMMUNICATION PROTOCOL\n\nA service outage occurs when an application feature or important service becomes temporarily unavailable. The technical team should investigate the incident and identify its possible impact on customers. Customers should receive timely updates through approved communication channels when a significant outage is confirmed.",
+            "context_relevance": 0.3333,
+            "groundedness": 1.0,
+            "answer_relevance": 1.0
+        },
+        {
+            "question": "What are the customer support working hours and holiday rules?",
+            "expected_document": "business_hours",
+            "retrieved_documents": [
+                "business_hours",
+                "business_hours",
+                "sla_policy"
+            ],
+            "answer": "Based on the support knowledge base:\n\nOLA SUPPORT - BUSINESS HOURS AND HOLIDAY POLICY\n\nThe standard customer support operating hours are Monday to Saturday, from 9 AM to 6 PM. General inquiries received outside business hours may be handled on the next working day. Critical incidents involving major service disruptions should be monitored through an emergency support process.\nDuring public holidays, regular support operations may have limited availability. Customers should be informed about any changes in support availability through official communication channels.\nOLA SUPPORT - SERVICE LEVEL AGREEMENT POLICY\n\nThe Service Level Agreement (SLA) defines the expected response and resolution time for customer support tickets. Critical tickets should receive an initial response within 15 minutes and a resolution target of 4 hours. High-priority tickets should receive a response within 1 hour and a resolution target of 12 hours.",
+            "context_relevance": 0.5,
+            "groundedness": 1.0,
+            "answer_relevance": 1.0
+        },
+        {
+            "question": "How should repeated customer complaints be handled?",
+            "expected_document": "repeat_complaints",
+            "retrieved_documents": [
+                "repeat_complaints",
+                "feedback_process",
+                "repeat_complaints"
+            ],
+            "answer": "Based on the support knowledge base:\n\nOLA SUPPORT - REPEAT COMPLAINT HANDLING POLICY\n\nRepeat complaints occur when a customer reports the same unresolved issue multiple times. Support employees should review the customer's previous tickets before creating a new ticket for the same problem. If the same issue is reported three or more times, the ticket should be flagged for priority review.\nThe feedback team should regularly review customer responses to identify common complaints and improvement opportunities. Negative feedback should be reviewed by the support management team when necessary.\nRepeated complaints that remain unresolved should be escalated to the appropriate senior support team. The support team should provide clear updates until the issue is resolved.",
+            "context_relevance": 0.5,
+            "groundedness": 1.0,
+            "answer_relevance": 1.0
+        },
+        {
+            "question": "When can customers receive service credits?",
+            "expected_document": "service_credit",
+            "retrieved_documents": [
+                "service_credit",
+                "service_credit",
+                "refund_policy"
+            ],
+            "answer": "Based on the support knowledge base:\n\nThe amount of credit should depend on the impact and duration of the service disruption. Service credits cannot be guaranteed for every complaint and must follow the applicable approval process.\nOLA SUPPORT - SERVICE CREDIT POLICY\n\nService credits are compensation benefits that may be provided to eligible customers after a verified service failure. Credits may be considered when a significant technical disruption or service interruption affects the customer's experience. Every service credit request must be reviewed by the authorized support team before approval.\nRefund processing time depends on the payment provider and banking system. Compensation may be considered when a verified service failure causes significant inconvenience to a customer.",
+            "context_relevance": 0.5,
+            "groundedness": 1.0,
+            "answer_relevance": 1.0
+        },
+        {
+            "question": "How does the support team collect customer feedback?",
+            "expected_document": "feedback_process",
+            "retrieved_documents": [
+                "feedback_process",
+                "feedback_process",
+                "communication_policy"
+            ],
+            "answer": "Based on the support knowledge base:\n\nThe feedback team should regularly review customer responses to identify common complaints and improvement opportunities. Negative feedback should be reviewed by the support management team when necessary.\nOLA SUPPORT - CUSTOMER FEEDBACK COLLECTION POLICY\n\nCustomer feedback helps the support team improve service quality and customer satisfaction. After a support ticket is resolved, customers may receive a feedback request through an approved communication channel. Customers can provide ratings and comments about their support experience.\nOLA SUPPORT - CUSTOMER COMMUNICATION POLICY\n\nCustomer communication should remain professional, respectful, clear, and helpful. Support teams may communicate with customers through approved channels such as registered email, in-app support, and official customer support contact channels. Customers should receive updates when their tickets are created, updated, escalated, or resolved.",
+            "context_relevance": 0.5,
+            "groundedness": 1.0,
+            "answer_relevance": 0.6667
+        },
+        {
+            "question": "How should VIP customers be handled?",
+            "expected_document": "vip_handling",
+            "retrieved_documents": [
+                "vip_handling",
+                "vip_handling",
+                "escalation_matrix"
+            ],
+            "answer": "Based on the support knowledge base:\n\nVIP customers should receive timely updates regarding ticket progress and resolution. Special handling must always follow company policies, privacy requirements, and authorization rules.\nOLA SUPPORT - VIP CUSTOMER HANDLING POLICY\n\nVIP customers may receive dedicated support based on their eligibility and service requirements. Their support tickets should be identified using an approved VIP classification system. High-impact complaints from VIP customers should receive priority review by the appropriate support team.\nCustomers should receive updates about the escalation and its progress.",
+            "context_relevance": 0.5,
+            "groundedness": 1.0,
+            "answer_relevance": 1.0
+        },
+        {
+            "question": "How should customers be informed about service outages?",
+            "expected_document": "outage_protocol",
+            "retrieved_documents": [
+                "outage_protocol",
+                "business_hours",
+                "escalation_matrix"
+            ],
+            "answer": "Based on the support knowledge base:\n\nOLA SUPPORT - SERVICE OUTAGE COMMUNICATION PROTOCOL\n\nA service outage occurs when an application feature or important service becomes temporarily unavailable. The technical team should investigate the incident and identify its possible impact on customers. Customers should receive timely updates through approved communication channels when a significant outage is confirmed.\nDuring public holidays, regular support operations may have limited availability. Customers should be informed about any changes in support availability through official communication channels.\nCustomers should receive updates about the escalation and its progress.",
+            "context_relevance": 0.3333,
+            "groundedness": 1.0,
+            "answer_relevance": 1.0
+        },
+        {
+            "question": "How long should customer support ticket data be retained?",
+            "expected_document": "data_retention",
+            "retrieved_documents": [
+                "data_retention",
+                "data_retention",
+                "vip_handling"
+            ],
+            "answer": "Based on the support knowledge base:\n\nOLA SUPPORT - CUSTOMER TICKET DATA RETENTION POLICY\n\nSupport-ticket information should be stored securely and accessed only by authorized employees. Customer support records should be retained for a standard period of 365 days after ticket closure in this capstone's sample policy. Records may be retained longer when required for an authorized investigation or applicable legal obligation.\nAfter the retention period expires, eligible records should be securely deleted or anonymized according to the applicable data-handling procedure. Sensitive customer information must never be shared with unauthorized individuals.\nVIP customers should receive timely updates regarding ticket progress and resolution. Special handling must always follow company policies, privacy requirements, and authorization rules.",
+            "context_relevance": 0.5,
+            "groundedness": 1.0,
+            "answer_relevance": 1.0
+        },
+        {
+            "question": "Who won the latest international cricket match?",
+            "expected_document": null,
+            "retrieved_documents": [
+                "outage_protocol",
+                "sla_policy",
+                "repeat_complaints"
+            ],
+            "answer": "I'm sorry, but I couldn't find reliable information about this question in my support knowledge base.",
+            "context_relevance": 0.0,
+            "groundedness": 1.0,
+            "answer_relevance": 1.0
+        },
+        {
+            "question": "Explain the process of photosynthesis in plants.",
+            "expected_document": null,
+            "retrieved_documents": [
+                "feedback_process",
+                "refund_policy",
+                "vip_handling"
+            ],
+            "answer": "I'm sorry, but I couldn't find reliable information about this question in my support knowledge base.",
+            "context_relevance": 0.0,
+            "groundedness": 1.0,
+            "answer_relevance": 1.0
+        },
+        {
+            "question": "What is the capital city of Japan?",
+            "expected_document": null,
+            "retrieved_documents": [
+                "sla_policy",
+                "outage_protocol",
+                "sla_policy"
+            ],
+            "answer": "I'm sorry, but I couldn't find reliable information about this question in my support knowledge base.",
+            "context_relevance": 0.0,
+            "groundedness": 1.0,
+            "answer_relevance": 1.0
+        }
+    ]
+}

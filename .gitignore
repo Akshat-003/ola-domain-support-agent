@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# ChromaDB
+chroma_db/
+
+# Logs
+logs/*.jsonl
+
+# SQLite database
+resilience/*.sqlite
+
+# IDE and operating system
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated conversation histories
+transcripts/*.json

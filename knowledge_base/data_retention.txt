@@ -1,0 +1,3 @@
+OLA SUPPORT - CUSTOMER TICKET DATA RETENTION POLICY
+
+Support-ticket information should be stored securely and accessed only by authorized employees. Customer support records should be retained for a standard period of 365 days after ticket closure in this capstone's sample policy. Records may be retained longer when required for an authorized investigation or applicable legal obligation. After the retention period expires, eligible records should be securely deleted or anonymized according to the applicable data-handling procedure. Sensitive customer information must never be shared with unauthorized individuals.

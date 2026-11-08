@@ -1,0 +1,3 @@
+OLA SUPPORT - SERVICE LEVEL AGREEMENT POLICY
+
+The Service Level Agreement (SLA) defines the expected response and resolution time for customer support tickets. Critical tickets should receive an initial response within 15 minutes and a resolution target of 4 hours. High-priority tickets should receive a response within 1 hour and a resolution target of 12 hours. Medium-priority tickets have a response target of 4 hours and a resolution target of 24 hours, while Low-priority tickets have a response target of 24 hours and a resolution target of 72 hours. These timelines are service targets and may change depending on the complexity of the issue.

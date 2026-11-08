@@ -1,0 +1,7 @@
+OLA SUPPORT - ESCALATION MATRIX POLICY
+
+The escalation matrix defines how unresolved customer complaints and support tickets are transferred to higher support levels. Level 1 support handles general questions and basic troubleshooting. Level 2 support handles complex technical problems, payment disputes, billing issues, and account-related problems that Level 1 cannot resolve.
+
+Level 3 support handles critical incidents, major service disruptions, repeated unresolved complaints, and cases requiring management attention. Tickets that exceed their SLA targets must be reviewed and escalated to the appropriate support team.
+
+When a customer complaint requires escalation, support employees should identify the issue severity, review previous troubleshooting attempts, and transfer the ticket to the correct support level. Customers should receive updates about the escalation and its progress.
